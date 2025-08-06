@@ -8,3 +8,7 @@ A simple Html landing page built as part of my frontend roadmap
 - About
 - Contact
 - Footer
+
+## Responsive
+
+-Made the site mobile responsive

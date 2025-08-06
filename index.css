@@ -18,3 +18,21 @@ ul li {
 p {
     color: white;
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: brown;
+    }
+
+    h1 {
+        color: white;
+    }
+    
+    ul li {
+        color: black;
+    }
+
+    p {
+        color: black;
+    }
+}
