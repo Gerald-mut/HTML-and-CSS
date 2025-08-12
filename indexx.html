@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>HTML and CSS</h1>
-        <ul>
-            <li><a href=#home class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <h1>HTML and CSS</h1>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      </ul>
     </header>
     <section id="home">
-        <h1>Home</h1>
-        <p>
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      <h1>Home</h1>
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been
+        looking to make a transition and have heard some people who had an
+        amazing experience here. I signed up for the free intro course and found
+        it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was
+        the best - and most grueling - time of my life. Since completing the
+        course, I’ve successfully switched careers, working as a Software
+        Engineer at a VR startup. ”
       </p>
     </section>
     <section id="about">
-        <h1>About</h1>
-        <p>
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      <h1>About</h1>
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been
+        looking to make a transition and have heard some people who had an
+        amazing experience here. I signed up for the free intro course and found
+        it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was
+        the best - and most grueling - time of my life. Since completing the
+        course, I’ve successfully switched careers, working as a Software
+        Engineer at a VR startup. ”
       </p>
     </section>
     <section id="services">
-        <h1>Services</h1>
-        <p>
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      <h1>Services</h1>
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been
+        looking to make a transition and have heard some people who had an
+        amazing experience here. I signed up for the free intro course and found
+        it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was
+        the best - and most grueling - time of my life. Since completing the
+        course, I’ve successfully switched careers, working as a Software
+        Engineer at a VR startup. ”
       </p>
     </section>
     <section id="contact">
-        <h1>Contact</h1>
-        <p><p>
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      <h1>Contact</h1>
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been
+        looking to make a transition and have heard some people who had an
+        amazing experience here. I signed up for the free intro course and found
+        it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was
+        the best - and most grueling - time of my life. Since completing the
+        course, I’ve successfully switched careers, working as a Software
+        Engineer at a VR startup. ”
       </p>
+    </section>
+    <section id="testimonials">
+      <h1>Testimonials</h1>
+      <div class="grid">
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been
+        looking to make a transition and have heard some people who had an
+        amazing experience here. ”
+      </p>
+      <p>
+        “Since completing the course, I’ve successfully switched careers,
+        working as a Software Engineer at a VR startup. ”
+      </p>
+      <p>
+        “ I’ve been looking to make atransition and have heard some people who
+        had an amazing experience here. I signed up for the free intro course
+        and found it incredibly fun! I enrolled shortly thereafter. The next 12
+        weeks was the best - and most grueling - time of my life. ”
+      </p>
+      </div>
     </section>
 
     <script>
       // select the nav links
-      document.querySelectorAll('.nav-link').forEach(link => {
-      // when each link is clicked it loads that function
-        link.addEventListener('click', function(event) {
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        // when each link is clicked it loads that function
+        link.addEventListener("click", function (event) {
           // stop default jump due to the href
           event.preventDefault();
           //get the navlinks
-          const targetId = this.getAttribute('href');
+          const targetId = this.getAttribute("href");
           //get the section we're scrolling to based on the target id
           const targetSection = document.querySelector(targetId);
           //scrollintoview is a function that scrolls to the element you want to see in the viewport so here it scrolls to the targetSection
           targetSection.scrollIntoView({
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         });
       });
     </script>
-</body>
+  </body>
 </html>
